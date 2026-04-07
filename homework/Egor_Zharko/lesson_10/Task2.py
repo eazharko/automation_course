@@ -5,7 +5,8 @@ def decorator(func):
     return wrapper
 
 @decorator
-def function_1(text):
+def function_1(text="Printing... :",):
     print(text)
 
-function_1("Printing... :", count=15)
+function_1(count=5)
+function_1(text="Being printed...:", count=10)
